@@ -1,6 +1,6 @@
-# project_1
+# SES Mobile App - SCHOOL OF ENGINEERING SCIENCES
 
-A new Flutter project.
+A mobile app for students at SES to keep track of academic activities
 
 ## Getting Started
 
