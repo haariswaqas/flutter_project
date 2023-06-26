@@ -311,6 +311,4 @@ class Dashboard extends StatelessWidget {
       ),
     );
   }
-
 }
-
