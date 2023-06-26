@@ -79,62 +79,81 @@ class Dashboard extends StatelessWidget {
               style: TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 24),
-            Text(
-              'Upcoming Assignments',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            Card(
-              child: ListTile(
-                title: const Text('Linear Circuits Homework 2'),
-                subtitle: const Text('Due: 12th June, 2023'),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                title: const Text('Linear Circuits Lab 1 Report'),
-                subtitle: const Text('Due: TBD'),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                title: const Text('Data Structures & Algorithms Lab 3'),
-                subtitle: const Text('Due: 17th June, 2023'),
-              ),
-            ),
-            const SizedBox(height: 24),
-            Text(
-              'Upcoming Projects',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(height: 8),
-            Card(
-              child: ListTile(
-                title: const Text('Linear Circuits Final Project'),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                title: const Text('Data Communications Final Project'),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                title: const Text('Software Engineering Project 1'),
-                subtitle: const Text('Due: 10th June, 2023'),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                title: const Text('Software Engineering Project 2'),
-                subtitle: const Text('Due: TBD'),
-              ),
-            ),
-            Card(
-              child: ListTile(
-                title: const Text('Software Engineering Project 3'),
-                subtitle: const Text('Due: TBD'),
-              ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Upcoming Assignments',
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      const SizedBox(height: 8),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Linear Circuits Homework 2'),
+                          subtitle: const Text('Due: 12th June, 2023'),
+                        ),
+                      ),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Linear Circuits Lab 1 Report'),
+                          subtitle: const Text('Due: TBD'),
+                        ),
+                      ),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Data Structures & Algorithms Lab 3'),
+                          subtitle: const Text('Due: 17th June, 2023'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Upcoming Projects',
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                      ),
+                      const SizedBox(height: 8),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Linear Circuits Final Project'),
+                        ),
+                      ),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Data Communications Final Project'),
+                        ),
+                      ),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Software Engineering Project 1'),
+                          subtitle: const Text('Due: 10th June, 2023'),
+                        ),
+                      ),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Software Engineering Project 2'),
+                          subtitle: const Text('Due: TBD'),
+                        ),
+                      ),
+                      Card(
+                        child: ListTile(
+                          title: const Text('Software Engineering Project 3'),
+                          subtitle: const Text('Due: TBD'),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
             const SizedBox(height: 24),
             Text(
